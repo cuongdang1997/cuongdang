@@ -4,9 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bài 1</title>
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        .wrapper {
+            width: 100%;
+        }
+
+        .wrapper .main-menu {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+
+        }
+
+        .main-menu li{
+            float: left;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 20%;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .main-menu li a {
+            color: #222222;
+        }
+
+        .main-menu li:hover {
+            color: #fff;
+            background: rgba(102, 177, 241, 0.8);
+            transition: all 0.5s ease;
+        }
+
+        .main-menu li:hover a {
+            color: #fff;
+        }
+
+        .block {
+            text-align: center;
+            padding: 300px 0;
+        }
+
+        .block h1 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .block p {
+            font-size: 20px;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div>Hello world!</div>
+    <div class="wrapper">
+        <ul class="main-menu">
+            <li><a href="#es6">ES6</a></li>
+            <li><a href="#flexbox">Flexbox</a></li>
+            <li>React</li>
+            <li>Angular</li>
+            <li>Other</li>
+        </ul>
+        <div class="block" id="es6">
+            <h1>ES6</h1>
+            <p>something about es6</p>
+        </div>
+        <div class="block" id="flexbox">
+            <h1>Flexbox</h1>
+            <p>something about flexbox</p>
+        </div>
+    </div>
 </body>
 </html>
